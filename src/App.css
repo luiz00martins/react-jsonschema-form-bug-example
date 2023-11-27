@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.my-custom-class-name {
+  position: relative; /* Needed to establish a stacking context for z-index to take effect */
+  z-index: 1000; /* Adjust the value as needed to be higher than other elements */
+}
+
+.form-container .form-group {
+  overflow: visible !important;
+}
